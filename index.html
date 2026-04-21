@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+
+    <header class="site-header glass">
+      <div class="container nav">
+        <a class="logo" href="#hero">Portfolio</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero container reveal">
+        <div class="hero-window glass">
+          <div class="window-topbar">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="window-title">Shivam Kumar Gupta - Portfolio</div>
+            <div class="window-actions">
+              <button class="mode-toggle" id="modeToggle" type="button" aria-label="Toggle color mode">
+                <i class="fa-solid fa-moon"></i>
+                <span>Dark Mode</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-left">
+              <p class="eyebrow">Java Developer | Full Stack Learner</p>
+              <h1>Hi, I am <span class="gradient-text">Shivam Kumar Gupta</span></h1>
+              <p class="hero-description">
+                I build scalable web applications and solve complex problems using
+                Data Structures and Algorithms.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">My Work</a>
+                <a class="btn btn-secondary" href="#contact">Hire Me</a>
+              </div>
+              <div class="socials socials-vertical">
+                <a href="https://github.com/shivamkgupta144-hue" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shivam-kumar-gupta-a614522b8" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/sh1vam_gupta____18" target="_blank" rel="noreferrer" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-right" aria-hidden="true">
+              <div class="mock-device">
+                <img
+                  class="device-image"
+                  src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=900&q=80"
+                  alt="Technical coding setup"
+                />
+                <div class="floating-card card-1">Dark Mode UI</div>
+                <div class="floating-card card-2">React + Node.js</div>
+                <div class="floating-card card-3">DSA + OOP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container image-showcase reveal" aria-label="Portfolio previews">
+        <article class="image-card glass">
+          <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=900&q=80" alt="Code editor setup on laptop" />
+        </article>
+        <article class="image-card glass">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Developer workspace with screens" />
+        </article>
+        <article class="image-card glass">
+          <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80" alt="Programming and web development visuals" />
+        </article>
+      </section>
+
+      <section id="about" class="section container reveal">
+        <div class="section-card glass">
+          <h2>About</h2>
+          <p>
+            I am a 3rd-year Computer Science student at Raj Kumar Goel Institute
+            of Technology. I specialize in Java, Data Structures, and Full Stack
+            Web Development using React and Node.js. I enjoy building efficient,
+            scalable applications and continuously improving my problem-solving
+            skills through coding platforms.
+          </p>
+          <p>
+            I am actively seeking internship opportunities to apply my skills
+            and gain real-world development experience.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section container reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-card glass">
+            <i class="fa-solid fa-code"></i>
+            <h3>Languages</h3>
+            <p>Java</p>
+          </article>
+          <article class="skill-card glass">
+            <i class="fa-solid fa-display"></i>
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, React.js</p>
+          </article>
+          <article class="skill-card glass">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend</h3>
+            <p>Node.js, Express.js</p>
+          </article>
+          <article class="skill-card glass">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database</h3>
+            <p>MongoDB</p>
+          </article>
+          <article class="skill-card glass">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Core</h3>
+            <p>Data Structures, Algorithms, OOP, DBMS</p>
+          </article>
+          <article class="skill-card glass">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card glass">
+            <h3>Quick-GPT</h3>
+            <p>
+              Developed a responsive AI chatbot interface with real-time
+              messaging capabilities. Built reusable UI components using
+              React.js and integrated REST APIs.
+            </p>
+            <p>
+              Implemented backend communication for authentication and message
+              processing. Optimized performance for a smooth and fast user
+              experience.
+            </p>
+            <p class="tech-stack">
+              Tech Stack: React.js, JavaScript, HTML, CSS, REST APIs
+            </p>
+            <a class="github-btn" href="https://github.com/shivamkgupta144-hue" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </article>
+          <article class="project-card glass">
+            <h3>Weather App</h3>
+            <p>
+              Developed a responsive weather application that provides real-time
+              weather updates based on user location or city search.
+            </p>
+            <p>
+              Integrated an external weather API to fetch live data including
+              temperature, humidity, wind speed, and weather conditions.
+              Implemented dynamic UI updates with clean design and smooth user
+              experience while ensuring mobile responsiveness and fast loading.
+            </p>
+            <p class="tech-stack">Tech Stack: HTML, CSS, JavaScript, REST API</p>
+            <a class="github-btn" href="https://github.com/shivamkgupta144-hue" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="achievements" class="section container reveal">
+        <h2>Achievements</h2>
+        <div class="achievements-list">
+          <article class="achievement glass">
+            <h3>Solved 150+ DSA Problems</h3>
+            <p>Completed 150+ problems across LeetCode and GeeksforGeeks.</p>
+          </article>
+          <article class="achievement glass">
+            <h3>Smart India Hackathon (SIH)</h3>
+            <p>Participated in SIH and collaborated on innovative problem-solving.</p>
+          </article>
+          <article class="achievement glass">
+            <h3>Coding Contests</h3>
+            <p>Actively participate in coding contests to sharpen speed and accuracy.</p>
+          </article>
+          <article class="achievement glass">
+            <h3>IEEE Student Member</h3>
+            <p>Active IEEE student member engaged in technical and learning activities.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container reveal">
+        <div class="section-card glass">
+          <h2>Contact</h2>
+          <p>Interested in working together? Feel free to connect with me.</p>
+          <div class="contact-details">
+            <a href="mailto:207cse2324@rkgit.edu.in">Email: 207cse2324@rkgit.edu.in</a>
+            <a href="tel:9044582412">Phone: 9044582412</a>
+          </div>
+          <div class="contact-socials">
+            <a class="btn btn-primary" href="https://github.com/shivamkgupta144-hue" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/shivam-kumar-gupta-a614522b8" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Shivam Kumar Gupta. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
